@@ -1,0 +1,58 @@
+<p>navbar works!</p>
+    <div id="fixed-nav-bar">
+      <div id="nav-bar">
+        <div id="hide-nav">
+          <div class="left-block">
+            <span class="logo-bg"></span>
+            <div class="left-block-menu">
+              <div class="nav-button">
+                <label class="checkbox-hack" for="toggle1">Phones</label>
+                <input type="checkbox" [checked]="hidePhoneNav" (click)="navMenuSelector($event)" id="toggle1" class="visually-hidden">
+                <ng-template  [ngIf]="hidePhoneNav" restamp>
+                  <div id="scroll-lock" class="sub-nav">
+                    sajhjashbd
+                  </div>
+                </ng-template>
+              </div>
+              <div class="nav-button">
+                <label class="checkbox-hack" for="toggle2">Connected Homes</label>
+                <input type="checkbox" [checked]="hideHomeNav" (click)="navMenuSelector($event)" id="toggle2" class="visually-hidden">
+                <ng-template  [ngIf]="hideHomeNav" restamp>
+                  <div id="scroll-lock" class="sub-nav">
+                    2aamatheaan
+                  </div>
+                </ng-template>
+              </div>
+              <div class="nav-button">
+                <label class="checkbox-hack" for="toggle3">Accessories</label>
+                <input type="checkbox" [checked]="hideAccessorieseNav" (click)="navMenuSelector($event)" id="toggle3" class="visually-hidden">
+                <ng-template  [ngIf]="hideAccessorieseNav" restamp>
+                  <div id="scroll-lock" class="sub-nav">
+                    3sajhjashbd
+                  </div>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+          <div class="right-bar">
+            <!-- <mat-icon icon="icons:touch-app"></mat-icon>
+            <mat-icon icon="icons:shopping-cart"></mat-icon>
+            <mat-icon icon="icons:face"></mat-icon>  -->
+          </div>
+        </div>
+        <div id="static-nav">
+<div class="heading-main">
+  <h1 class="title-text">Chromecast Black</h1>
+</div>
+<div class="middle-items">
+  <a class="sub-link-middle selected" href="#">Overview</a>
+  <a class="sub-link-middle" href="#">Tech Specs</a>
+  <a class="sub-link-middle" href="#">Setup & Tips</a>
+  <a class="sub-link-middle" href="#">Apps & Partners</a>
+</div>
+<div class="left-block-button">
+  <button class="block-button">Find Retailers</button>
+</div>
+        </div>
+      </div>
+    </div>

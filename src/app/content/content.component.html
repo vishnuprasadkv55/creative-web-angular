@@ -1,0 +1,41 @@
+
+<div id="main-content-selector" class="main-content">
+  <div class="specific-content">
+    <div class="first-page" id="section1">
+      <div class="section1-text reveal-text" id="divToShowHide">Smarts plus design.
+        Elevate your TV with Chromecast.</div>
+      <video id="sample-video" autoplay src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" loop poster="http://media.w3.org/2010/05/sintel/poster.png" muted="muted">
+        <!-- <source id="mp4"
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          type="video/mp4"> -->
+        </video>
+    </div>
+    <div class="second-page" id="section2">
+      <div class="section2-text reveal-text" id="divToShowHide">
+        <app-vslider></app-vslider>
+      </div>
+
+    </div>
+    <div class="third-page" id="section3">
+      <div class="section3-text reveal-text" id="divToShowHide">
+            <app-thirdpage></app-thirdpage>
+      </div>
+    </div>
+    <div class="fourth-page" id="section4">
+      <div class="contents-fourth">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">location_on</mat-icon>
+      <div class="fourth-heading">Available at</div>
+      <mat-icon (click)="showStore()" aria-hidden="false" aria-label="Example home icon">add_circle_outline</mat-icon>
+      <ng-template  [ngIf]="showStoreDiv" restamp>
+        <div id="scroll-lock" class="sub-nav store-selector">
+          sajhjashbd
+        </div>
+      </ng-template>
+    </div>
+
+    </div>
+    <div class="fifth-page" id="section5">
+      
+    </div>
+  </div>
+</div>
