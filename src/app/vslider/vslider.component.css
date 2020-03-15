@@ -24,6 +24,7 @@
 }
 .slider-widget img{
     opacity: 0;
+    height: 44em;
     position: absolute;
     transition: all 0.5s ease-in;
 }
